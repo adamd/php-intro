@@ -19,7 +19,9 @@
       echo "<h1> The ".$selected_product." is $".$value." after tax. </h1>";
 
     foreach($products as $key => $value){
-	    echo "The ".$key." costs ".$value;
+      if($key == $selected_product){
+      	echo $key; // nothing should output here except "Computer"
+      }
     }
     ?>
   </body>
