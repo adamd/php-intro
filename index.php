@@ -17,6 +17,10 @@
       $selected_product = "Computer"; // This is the product we are looking for
 
       echo "<h1> The ".$selected_product." is $".$value." after tax. </h1>";
+
+    foreach($products as $key => $value){
+	    echo "The ".$key." costs ".$value;
+    }
     ?>
   </body>
 </html>
